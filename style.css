@@ -2,6 +2,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
 }
 
 #intro {
@@ -14,8 +15,85 @@
 
 .main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-grow: 2;
     justify-content: center;
+    gap: 50px;
+    background-color: #f0f0f0;
+}
+
+.config {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 20px;
+    margin-top: 37px;
+    
+}
+
+.color-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.color-picker label {
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.color-picker input {
+    
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+    outline: none;
+}
+.color-picker input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.color-picker input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.mode-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.mode-selector button {
+    box-sizing: border-box;
+    width: 170px;
+    height: 60px;
+    /* padding: 35px 30px 35px 30px; */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(182, 200, 154);
+    font-size: large;
+    font-weight: 900;
+}
+
+.mode-selector button.active {
+    background-color: rgb(74, 69, 63);
+    color: white;
 }
 
 .grid {
@@ -24,6 +102,8 @@
     width: 640px;
     height: 640px;
     border: 2px solid black;
+    background-color: white;
+    margin-bottom: 100px;
 }
 
 .cell {
@@ -39,4 +119,7 @@
 #outro {
     display: flex;
     flex-grow: 1;
+    
 }
+
+
