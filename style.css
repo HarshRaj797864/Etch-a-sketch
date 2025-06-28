@@ -29,6 +29,8 @@
     gap: 100px;
     padding: 20px;
     margin-top: 37px;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -96,6 +98,13 @@
     color: white;
 }
 
+.size-control {
+
+    font-weight: 900;
+    font-size: 30px;
+
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +119,7 @@
     box-sizing: border-box;
     min-width: 40px;
     min-height: 40px;
-    /* border: 0.5px solid black; */
+    border: 0.5px solid black;
 }
 /* .cell:hover {
     background-color: aqua;
