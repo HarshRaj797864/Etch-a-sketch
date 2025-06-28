@@ -11,16 +11,21 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    background-color: rgb(43, 43, 69);
+    color: white;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 2;
-    justify-content: center;
+    flex-grow: 1;
+    justify-content: flex-start;
     gap: 50px;
     background-color: #f0f0f0;
+    overflow-y: auto; /* Allows scrolling if content is too tall */
+    padding: 20px 0;
+    margin-bottom: 40px;
 }
 
 .config {
@@ -108,18 +113,19 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 640px;
+    width: 720px;
     height: 640px;
     border: 2px solid black;
     background-color: white;
     margin-bottom: 100px;
+    overflow: hidden;
 }
 
 .cell {
     box-sizing: border-box;
     min-width: 40px;
     min-height: 40px;
-    border: 0.5px solid black;
+    /* border: 0.5px solid black; */
 }
 /* .cell:hover {
     background-color: aqua;
@@ -128,7 +134,31 @@
 #outro {
     display: flex;
     flex-grow: 1;
+    flex-shrink: 0; /* Prevents footer from being pushed down */
+    margin-top: auto;
+    justify-content:center ;
+    align-items: center;
+    gap: 30px;
     
 }
+
+.footy {
+    font-size: larger;
+    font-weight: 900;
+}
+
+.heady {
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.page p {
+    font-weight: 900;
+    text-align: center;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+} 
 
 
