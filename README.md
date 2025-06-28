@@ -1,7 +1,4 @@
 # Etch-a-Sketch Web App
-
-![Project Screenshot](https://via.placeholder.com/800x500.png?text=Etch-a-Sketch+Screenshot) <!-- Replace with actual screenshot -->
-
 A browser-based drawing application inspired by the classic Etch A Sketch toy, built with HTML, CSS, and JavaScript.
 
 ## Features
@@ -41,3 +38,6 @@ A browser-based drawing application inspired by the classic Etch A Sketch toy, b
 2. Open index.html in your browser
 
 ## Live Demo
+
+https://harshraj797864.github.io/Etch-a-sketch/
+
